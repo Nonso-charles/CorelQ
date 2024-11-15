@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Company Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom dropdown styling */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-blue-600">
+        CorelQ
+      </div>
+
+      <!-- Navbar for larger screens -->
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">About Us</a>
+
+        <!-- Services dropdown -->
+        <div class="relative dropdown">
+          <button class="text-gray-600 hover:text-blue-600 focus:outline-none">
+            Services
+          </button>
+          <div class="dropdown-menu hidden absolute left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg w-48 py-2">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Web Development</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">App Development</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">SEO Optimization</a>
+          </div>
+        </div>
+
+        <a href="#" class="text-gray-600 hover:text-blue-600">Pricing</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden">
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+      <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+        Services
+      </button>
+      <div class="pl-4">
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Web Development</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">App Development</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">SEO Optimization</a>
+      </div>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+    </div>
+  </nav>
+ 
+ <!-- hero section -->
+<section class="container mx-auto px-6 py-20 md:flex md:justify-between items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <!-- Hero Text -->
+    <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Transform Your Business with CorelQ
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+            We provide cutting-edge solutions to help streamline your business processes and accelerate growth. Join thousands of satisfied customers who trust us to scale their operations.
+        </p>
+        <div>
+            <a href="#" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                Get Started
+            </a>
+            <a href="#" class="ml-4 text-white underline hover:text-gray-200">
+                Learn More
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="md:w-1/2">
+        <img src="hero-img.png" alt="SaaS illustration" class="rounded-lg shadow-lg">
+    </div>
+</section>
+
+<!-- About Us Section -->
+  <section class="container mx-auto px-6 py-20 bg-gray-50">
+      <!-- Title and Subtitle -->
+      <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-blue-600 mb-4">About Us</h2>
+          <p class="text-lg text-gray-600">
+              At CorelQ, we're committed to empowering businesses with innovative solutions that drive success.
+          </p>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Text Content -->
+          <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+              <p class="text-gray-600 mb-6">
+                  Our mission is to revolutionize the way businesses operate by providing powerful, user-friendly software solutions that simplify processes and enhance productivity. We believe in creating tools that are not just functional, but transformative.
+              </p>
+
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Vision</h3>
+              <p class="text-gray-600">
+                  We envision a world where technology seamlessly integrates with daily business operations, enabling companies of all sizes to reach their full potential without limitations.
+              </p>
+          </div>
+
+          <!-- Image -->
+          <div>
+              <img src="team.png" alt="About Us Illustration" class="rounded-lg shadow-lg">
+          </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="mt-16">
+          <h3 class="text-3xl font-semibold text-blue-600 text-center mb-8">Our Core Values</h3>
+          <div class="grid md:grid-cols-3 gap-8">
+              <!-- Value 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div class="flex items-center mb-4">
+                      <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <h4 class="text-xl font-semibold text-gray-800">Innovation</h4>
+                  </div>
+                  <p class="text-gray-600">
+                      We strive to be at the forefront of technology, constantly innovating to bring the best solutions to our clients.
+                  </p>
+              </div>
+
+              <!-- Value 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div class="flex items-center mb-4">
+                      <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12.0002a8 8 0 11-16 0 8 8 0 0116 0z"></path>
+                      </svg>
+                      <h4 class="text-xl font-semibold text-gray-800">Reliability</h4>
+                  </div>
+                  <p class="text-gray-600">
+                      Dependability is key. We ensure our clients can always trust our products to perform efficiently and effectively.
+                  </p>
+              </div>
+
+              <!-- Value 3 -->
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div class="flex items-center mb-4">
+                      <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a4 4 0 10-8 0v2m-2 4h12a2 2 0 012 2v5a2 2 0 01-2 2H7a2 2 0 01-2-2v-5a2 2 0 012-2z"></path>
+                      </svg>
+                      <h4 class="text-xl font-semibold text-gray-800">Security</h4>
+                  </div>
+                  <p class="text-gray-600">
+                      We prioritize the safety and security of our clients' data, implementing top-tier security practices in our solutions.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="container mx-auto px-6 py-20 bg-gray-50">
+    <!-- Title -->
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-blue-600 mb-4">Our Services</h2>
+        <p class="text-lg text-gray-600">
+            We offer a suite of services to cater to your business needs and help you achieve your goals efficiently.
+        </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+                <svg class="w-10 h-10 text-blue-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 010-8h18a4 4 0 110 8H3z"></path>
+                </svg>
+                <h4 class="text-xl font-semibold text-gray-800">Cloud Integration</h4>
+            </div>
+            <p class="text-gray-600">
+                Seamlessly integrate cloud solutions into your workflow to improve accessibility and collaboration across your teams.
+            </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+                <svg class="w-10 h-10 text-blue-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8h13M3 16h13M17 9l4 3-4 3V9z"></path>
+                </svg>
+                <h4 class="text-xl font-semibold text-gray-800">Custom Software Solutions</h4>
+            </div>
+            <p class="text-gray-600">
+                Tailored software solutions designed to meet the unique demands of your business and maximize productivity.
+            </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+                <svg class="w-10 h-10 text-blue-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M16.54 12.54A5.982 5.982 0 0012 10c-3.308 0-6 2.692-6 6a6 6 0 0012 0h-2"></path>
+                </svg>
+                <h4 class="text-xl font-semibold text-gray-800">Data Analytics</h4>
+            </div>
+            <p class="text-gray-600">
+                Harness the power of data to make informed decisions, optimize strategies, and unlock growth potential for your business.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="container mx-auto px-6 py-20 bg-gray-50">
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-blue-600 mb-4">Our Pricing Plans</h2>
+      <p class="text-lg text-gray-600">
+        Choose the plan that best suits your business needs and scale seamlessly.
+      </p>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Basic Plan -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Basic Plan</h3>
+        <p class="text-4xl font-bold text-blue-600 mb-6">$19<span class="text-xl text-gray-600">/mo</span></p>
+        <ul class="text-gray-600 mb-8">
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Access to basic features
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            5 GB cloud storage
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Standard support
+          </li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Pro Plan (Highlighted) -->
+      <div class="bg-blue-50 p-8 rounded-lg shadow-lg transform scale-105">
+        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Pro Plan</h3>
+        <p class="text-4xl font-bold text-blue-800 mb-6">$49<span class="text-xl text-gray-700">/mo</span></p>
+        <ul class="text-gray-700 mb-8">
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-800 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Everything in Basic
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-800 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            50 GB cloud storage
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-800 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Priority support
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-800 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Advanced analytics
+          </li>
+        </ul>
+        <button class="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Enterprise Plan</h3>
+        <p class="text-4xl font-bold text-blue-600 mb-6">$99<span class="text-xl text-gray-600">/mo</span></p>
+        <ul class="text-gray-600 mb-8">
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Everything in Pro
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Unlimited cloud storage
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Dedicated account manager
+          </li>
+          <li class="flex items-center mb-3">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414l2.707 2.707L15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Customizable solutions
+          </li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="container mx-auto px-6 py-20 bg-gray-50">
+    <!-- Title and Intro -->
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-blue-600 mb-4">Get in Touch</h2>
+        <p class="text-lg text-gray-600">
+            Have questions or need assistance? We're here to help. Reach out to us through the form below or use our contact information.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <form action="#" method="POST">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-blue-500" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition-colors">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+            <p class="text-gray-600 mb-6">
+                We’d love to hear from you! Whether you have a question about features, pricing, or anything else, our team is ready to answer all your questions.
+            </p>
+            <div class="mb-4">
+                <h4 class="text-xl font-medium text-blue-600">Email Us</h4>
+                <p class="text-gray-600">support@CorelQ.com</p>
+            </div>
+            <div class="mb-4">
+                <h4 class="text-xl font-medium text-blue-600">Call Us</h4>
+                <p class="text-gray-600">+1 (123) 456-7890</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-medium text-blue-600">Location</h4>
+                <p class="text-gray-600">41 Road F Close Festac Town, Lagos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div>
+            <h4 class="text-xl font-semibold text-white mb-4">CorelQ</h4>
+            <p class="text-gray-400">
+                Transforming your business through cutting-edge SaaS solutions designed to elevate productivity and growth.
+            </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+            <h4 class="text-lg font-medium text-white mb-3">Quick Links</h4>
+            <ul class="space-y-2">
+                <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
+                <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                <li><a href="#careers" class="hover:text-blue-500">Careers</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+            <h4 class="text-lg font-medium text-white mb-3">Contact</h4>
+            <p class="text-gray-400 mb-2">Email: support@CorelQ.com</p>
+            <p class="text-gray-400 mb-2">Phone: +1 (123) 456-7890</p>
+            <p class="text-gray-400">Address: 41 Road F Close, Lagos</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+            <h4 class="text-lg font-medium text-white mb-3">Follow Us</h4>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-500">
+ <img src="instagram.png" alt="" class="w-10 h-10"/>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-500">
+   <img src="youtube.png" alt="youtube.png" class="w-10 h-10">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-500">
+    <img src="tik-tok.png" alt="tik-tok.png" class="w-10 h-10">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+        <p>&copy; 2024 CorelQ. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script>
+    // Toggle mobile menu
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
